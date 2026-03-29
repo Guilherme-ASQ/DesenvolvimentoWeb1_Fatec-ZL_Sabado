@@ -1,19 +1,63 @@
 <!DOCTYPE HTML>
 <html>
     <head>
-        <title>Portifólio em HTML FATEC ZONA LESTE</title>
+        <title>Portifólio em HTML Fatec Zona Leste</title>
+        <link rel="stylesheet" href="styles_index.css">
     </head>
     <body>
-        <!-- Essa é a página index.html que servirá como "home" no github para os exercícios que for fazer em sala de aula.
-         Aqui nessa página ela será a primeira coisa a ser aberta.
-         E a partir dela, eu vou ser redirecionado para as demais páginas HMTL que eu for desenvolvendo em sala de aula.
-        -->
-         <a href="https://www.w3schools.com/">Visit W3Schools! <br> </a>
-         <a href="Ex 1/exUM.html">Exercício 1 <br> </a>
-         <a href="Ex 2/exDOIS.html">Exercício 2 <br> </a>
-         <a href="Ex 3/exTRES.html">Exercício 3 <br> </a>
-         <!--
-         <a href="filename.html">Link Text</a>
-         -->
+      <!--ESSA DIV vai ter um container que se alinha a esquerda. ESSA DIV vai ter o card E o lance do acordeão com os links para os exercícios.-->
+      <div class="div-container-left">
+        <!--Essa vai ser  div DO CARTÃO-->
+        <div class="card">
+          <!--Essa é a DIV da parte de cima do cartão-->
+          <div class="card-header">
+            <img src="img/Foto_Gui.png" alt="Foto 3x4" class="profile-img">
+            <!--Essa é a DIV com as minhas informações-->
+            <div class="user-info">
+              <h2>Guilherme Ariel Dos Santos Queiroz</h2>
+              <p>Tecnólogo em Jogos Digitais e aspirante a Desenvolvedor</p>
+            </div><!--Fim da div das minhas informações-->
+          </div><!--Fim da DIv da parte de cima do cartão-->
+
+          <!--Essa div é do meio do cartão-->
+          <div class="card-body text-justify">
+            <p>Formado como Tecnólogo em Jogos Digitais pela Fatec São Caetano do Sul, iniciei minha segunda graduação para aprimorar meus conhecimentos e expandir meus horizontes.</p>
+          </div><!--Fim da DIV do meio do cartão-->
+
+          <!--Essa div é pra parte de baixo do cartão-->
+          <div class="card-footer">
+            <a href="https://guilherme-asq.itch.io/">Portifólio de Jogos</a>
+          </div><!--Fim da div da parte de baixo do cartão-->
+
+        </div><!--DIM da DIV do Cartão-->
+
+        <!--Essa div é para o acordeão sem bootstrap-->
+          <div>
+            <details>
+              <summary>Exercício 1</summary>
+              <p>Primeiro exercício em HTML, feito com o intuito de apresenter os conceitos iniciais da programação em HTML.</p>
+              <a href="Ex 1/exUM.html">Exercício 1</a>
+            </details>
+            
+            <details>
+              <summary>Exercício 2</summary>
+              <p>Segundo exercício em HTML. A proposta do exercício era tentar recriar o visual de uma página web já existente, com o intuito de reforçar os conceitos iniciais.</p>
+              <a href="Ex 2/exDOIS.html">Exercício 2</a>
+            </details>
+
+            <details>
+              <summary>Exercício 3</summary>
+              <p>Exercício feito para aprsentar os conceitos iniciais de CSS e algumas de suas interações com as tags HTML.</p>
+              <a href="Ex 3/exTRES.html">Exercício 3</a>
+            </details>
+
+            <details>
+              <summary>Exercício 4</summary>
+              <p>Exercício feito para apresentar o Flexbox e suas funcionalidades.</p>
+              <a href="Ex 4/exQUATRO.html">Exercício 4</a>
+            </details>
+          </div><!--Fimk da div do acordeão sem bootstrap-->
+
+      </div><!--Fim da DIV do "CONTAINER". Aqui fica o cartão e o acordeão com os links pros exercícios.-->
     </body>
 </html>
