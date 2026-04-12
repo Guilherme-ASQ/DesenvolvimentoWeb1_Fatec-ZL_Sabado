@@ -3,6 +3,8 @@
     width: 300px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 15px;
+    margin: 10px;
+    box-shadow: 5px 8px;
 }
 
 .profile-img {
@@ -10,6 +12,7 @@
     height: 100px;
     border-radius: 50%;
     object-fit: cover;
+    box-shadow: 4px 4px 6px black;
 }
 
 .card-header {
@@ -23,6 +26,13 @@
 .card-body {
     background-color: lightgray;
     padding: 20px;
+}
+
+.card-footer {
+    text-align: center;
+    border-radius: 0 0 15px 15px;
+    background-color: lightgray;
+    color: black;
 }
 
 .text-justify{
@@ -43,13 +53,19 @@ details {
     margin-bottom: 5px;
     border-radius: 5px;
     background-color: lightgray;
+    margin: 5px;
+    box-shadow: 5px 5px 5px black;
 }
 
 summary {
     font-weight: bold;
     cursor: pointer;
+    /*box-shadow: 5px 5px 5px black;*/
+    /*box-shadow: 5px 5px 5px blue;*/
 }
 
 details[open] summary {
-    color: orange;
+    color: black;
+    /*color: orange;*/
+    /*box-shadow: 5px 5px 5px black;*/
 }

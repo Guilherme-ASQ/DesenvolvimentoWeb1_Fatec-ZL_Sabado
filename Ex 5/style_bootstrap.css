@@ -1,0 +1,16 @@
+.imgC {
+    width: 150px;
+    height: 150px;
+}
+
+/*p {
+    color: black;
+    font-style: bold;
+    text-shadow: 5px 5px 5px red;
+}*/
+
+h5, p {
+    color: red;
+    font-size: bold;
+    text-shadow: 5px 5px 5px grey;
+}
