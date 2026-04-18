@@ -1,0 +1,17 @@
+.div-container-center {
+    background-color: lightgray;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 300px;
+    border-radius: 20px;
+}
+
+.texto-centralizado {
+    text-align: center;
+}
+
+h1, p {
+    color: black;
+}

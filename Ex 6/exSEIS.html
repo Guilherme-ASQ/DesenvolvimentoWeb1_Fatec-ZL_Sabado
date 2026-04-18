@@ -1,0 +1,53 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Exercicio 6</title>
+        <!--
+        Pagina simples, dois botões.
+        Cada botão muda uma coisa do CSS.
+        Duas formas de escrever: Priemira é direto na tag, Segunda é escrevendo num arquivo javascript separado.
+        Onclick. OnMouseOver
+        -->
+        <link rel="stylesheet" href="style_exSEIS.css">
+    </head>
+    <body>
+        <!--DIV com um container. Esse container centraliza tudo e terá uma cor de fundo.-->
+        <div id="teste" class="div-container-center">
+            <!--Texto em cima explicando o que é o exercício-->
+            <div class="texto-centralizado">
+                <h1 id="texto1">Exemplos Iniciais Javascript</h1>
+                <p id="texto2">Esse exercicio eh para apresentar o Javascript e suas interacoes com os elementos da pagina em HTML e os elementos em CSS.</p>
+                
+                <!--DIV com os botões pra mudar a cor de fundo-->
+                <div>
+                    <!--Botão com Javascript direto na TAG-->
+                    <!--
+                    <button type="button" onclick="document.getElementsByClassName('div-container-center').style.backgroundColor = 'red' ">VERMELHO</button>
+                    -->
+                    <button type="button" onclick="document.getElementById('teste').style.backgroundColor = 'red' ">FUNDO VERMELHO</button>
+
+                    <!--Botão com Javascript em um arquivo separado-->
+                    <button type="button" onclick="mudarCor('blue')" >FUNDO AZUL</button>
+
+                    <!---->
+                    <button type="button" onclick="mudarCor('green')">FUNDO VERDE</button>
+
+                    <button type="button" onclick="mudarCor('lightgray')">FUNDO CINZA CLARO</button>
+
+                    <!--Pegar o elemento pela classe, terá uma lista pq a classe pode ter vários elemenos. ENtão eu tenho que passar o indice da lista.-->
+                    <button type="button" onclick="document.getElementsByClassName('div-container-center')[0].style.backgroundColor = 'black'">BLACK</button>
+                </div>
+
+                <!--Botões pra mudar a cor do texto-->
+                <div>
+                    <p id="textoBotao"><strong>Mudar a Cor do Texto</strong></p>
+                    <button type="button" onclick="mudaTextoCor('black')">TEXTO PRETO</button>
+                    <button type="button" onclick="mudaTextoCor('white')">TEXTO BRANCO</button>
+                </div>
+            </div><!--FIm da div-->
+        </div>
+
+        <!--Link com o Arquivo Javascript-->
+        <script src="script_exSEIS.js"></script>
+    </body>
+</html>

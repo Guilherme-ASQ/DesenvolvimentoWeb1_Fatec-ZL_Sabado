@@ -5,83 +5,259 @@
         <link rel="stylesheet" href="styles_index.css">
     </head>
     <body>
-      
+        <!--QUARTA VERSÃO DO PORTIFÓLIO EM HTML
+        AGORA VOU TENTAR USAR O CÓDIGO DO EXEMPLO DE ACORDEÃO SEM BOOTSTRAP QUE EU TENHO.
+        -->
+        <main class="content">
+            <!--DIV pra colocar tudo.
+            Aqui vai ter duas colunas, uma na esquerda e uma no centro.
+            A coluna na esquerda vai ser o meu cartão, e a coluna no centro vai ser uma "sidebar".
+            Dentro da "sidebar" vai ter um acordeão com dois itens.
+            No primeiro item do acordeão terá os links do portifólio de jogos.
+            No segundo item do acordeão terá os links dos exercícios de HTML da matéria de Web de sábado.
+            -->
+            <div id="main-container">
+                <!--DIV da Coluna da esquerda-->
+                <div id="column-left">
+                    <!--AQUI ACHO QUE VOU COLOCAR SÓ O CARTÃO COM AS MINHAS INFORMAÇÕES-->
+                    <div class="card">
+                        <div class="card-header">
+                            <img src="img/Foto_Gui.png" alt="Foto 3x4" class="profile-img">
+                            <div class="user-info">
+                                <h2>Guilherme Ariel Dos Santos Queiroz</h2>
+                                <p>Tecnólogo em Jogos Digitais e aspirante a Desenvolvedor</p>
+                            </div>
+                        </div>
 
-      <main class="content">
-        <!--ESSA DIV vai ter um container que se alinha a esquerda. ESSA DIV vai ter o card E o lance do acordeão com os links para os exercícios.-->
-        <div class="div-container-left">
-          <!--Essa vai ser  div DO CARTÃO-->
-          <div class="card">
-            <!--Essa é a DIV da parte de cima do cartão-->
-            <div class="card-header">
-              <img src="img/Foto_Gui.png" alt="Foto 3x4" class="profile-img">
-              <!--Essa é a DIV com as minhas informações-->
-              <div class="user-info">
-                <h2>Guilherme Ariel Dos Santos Queiroz</h2>
-                <p>Tecnólogo em Jogos Digitais e aspirante a Desenvolvedor</p>
-              </div><!--Fim da div das minhas informações-->
-            </div><!--Fim da DIv da parte de cima do cartão-->
-
-            <!--Essa div é do meio do cartão-->
-            <div class="card-body text-justify">
-              <p>Formado como Tecnólogo em Jogos Digitais pela Fatec São Caetano do Sul. Atualmente, ingressei em uma nova faculdade. <br>
+                        <div class="card-body">
+                            <p text-justify>Formado como Tecnólogo em Jogos Digitais pela Fatec São Caetano do Sul. Atualmente, ingressei em uma nova faculdade. <br>
               Iniciei minha segunda graduação como Tecnólogo em Desenvolvimento de Softwares Multiplataforma, para aprimorar meus conhecimentos 
               e expandir meus horizontes.</p>
-            </div><!--Fim da DIV do meio do cartão-->
+                        </div>
 
-            <!--Essa div é pra parte de baixo do cartão-->
-            <div class="card-footer">
-              <a href="https://guilherme-asq.itch.io/">Portifólio de Jogos</a>
-            </div><!--Fim da div da parte de baixo do cartão-->
+                        <div class="card-footer">
+                            <a href="#" class="btn">Link 1</a>
+                            <a href="#" class="btn">Link 2</a>
+                        </div>
+                    </div>
 
-          </div><!--DIM da DIV do Cartão-->
+                </div><!--DIV coluna esuqerda-->
 
-          <!--Essa div é para o acordeão sem bootstrap-->
-            <div>
-              <details>
-                <summary>Exercício 1</summary>
-                <p>Primeiro exercício em HTML, feito com o intuito de apresenter os conceitos iniciais da programação em HTML.</p>
-                <a href="Ex 1/exUM.html">Exercício 1</a>
-              </details>
-            
-              <details>
-                <summary>Exercício 2</summary>
-                <p>Segundo exercício em HTML. A proposta do exercício era tentar recriar o visual de uma página web já existente, com o intuito de reforçar os conceitos iniciais.</p>
-                <a href="Ex 2/exDOIS.html">Exercício 2</a>
-              </details>
+                <!--DIV coluna do centro.-->
+                <div id="column-center">
+                    <!--DIV do Acordeão-->
+                    <div class="accordion">
+                        <!--ITEM 1 = Portifólio de Jogos-->
+                        <details>
+                            <summary>Portifólio de Jogos</summary>
+                            <div class="conteudo">
+                                <div class="div-container-center">
+                                    <!--CARTÃO DENHONE = JOGO MATERIA ESTAGIO-->
+                                    <div class="card">
+                                        <div class="card-header">
+                                            <img src="./img/Dengone.png" alt="Dengone" class="imgJogos">
+                                            <div class="user-info">
+                                                <h2>Dengone: The Bloodsucker</h2>
+                                            </div>
+                                        </div>
 
-              <details>
-                <summary>Exercício 3</summary>
-                <p>Exercício feito para aprsentar os conceitos iniciais de CSS e algumas de suas interações com as tags HTML.</p>
-                <a href="Ex 3/exTRES.html">Exercício 3</a>
-              </details>
+                                        <div class="card-body">
+                                            <p class="text-justify">Jogo desenvolvido como parte do programa de extensão "Fábrica de Jogos" 
+                                                da Fatec São Caetano do Sul no período letivo 2024/1.</p>
+                                        </div>
 
-              <details>
-                <summary>Exercício 4</summary>
-                <p>Exercício feito para apresentar o Flexbox e suas funcionalidades.</p>
-                <a href="Ex 4/exQUATRO.html">Exercício 4</a>
-              </details>
+                                        <div class="card-footer">
+                                            <a href="https://fabricadejogosfatec.itch.io/dengone-the-bloodsucker">Dengone: The Bloodsucker</a>
+                                        </div>
+                                    </div><!--FIM DA DIV CARTÃO DO DENGONE = JOGO MATERIA ESTAGIO-->
 
-              <details>
-                <summary>Exercicio 5 - A</summary>
-                <p>Exercício feito para apresentar o framework Bootstrap e suas funcionalidades.</p>
-                <a href="Ex 5/Apresentação Bootstrap.html">Exercício 5 - A</a>
-              </details>
+                                    <!--CARTÃO TCC DA FATEC SÃO CAETANO DO SUL-->
+                                    <div class="card">
+                                        <div class="card-header">
+                                            <img src="./img/Furtivo.jpg" alt="Furtivo" class="imgJogos">
+                                            <div class="user-info">
+                                                <h2>Furtivo</h2>
+                                            </div>
+                                        </div>
 
-              <details>
-                <summary>Exercício 5 - B</summary>
-                <p>Exercício feito com o objetivo de tentar reproduzir a página inicial do site da Amazon, utilizando o framework Bootstrap.</p>
-                <a href="Ex 5/exCINCOb.html">Exercicio 5 - B</a>
-              </details>
+                                        <div class="card-body">
+                                            <p class="text-justify">Trabalho de Conclusão de Curso (TCC) do Curso Superior 
+                                                de Tecnologia em Jogos Digitais da Fatec São Caetano do Sul</p>
+                                        </div>
 
-            </div><!--Fimk da div do acordeão sem bootstrap-->
+                                        <div class="card-footer">
+                                            <a href="https://fatecsaocaetano.itch.io/furtivo">Furtivo</a>
+                                        </div>
+                                    </div><!--FIM DA DIV CARTÃO DO TCC-->
 
-        </div><!--Fim da DIV do "CONTAINER". Aqui fica o cartão e o acordeão com os links pros exercícios.-->
-      </main><!--FIM DA DIV MAIN-->
-      
-      <footer class="footer">
-        <p>&copy: 2026 Minha Empresa - Todos os Direitos Reservados</p>
-      </footer><!--FIM DO FOOTER-->
+                                    <!--CARTÃO PRO MEU PERFIL DO ITCH IO-->
+                                    <div class="card">
+                                        <div class="card-header">
+                                            <img src="./img/ItchIO_logo.png" alt="Perfil do Itch io" class="imgJogos">
+                                            <div class="user-info">
+                                                <h2>Itch io</h2>
+                                            </div>
+                                        </div>
 
+                                        <div class="card-body">
+                                            <p class="text-justify">Portifólio pessoal de projetos de jogos publicados no site Itch io.</p>
+                                        </div>
+
+                                        <div class="card-footer">
+                                            <a href="https://guilherme-asq.itch.io/">Portifólio Pessoal de Jogos</a>
+                                        </div>
+                                    </div><!--FIM DA DIV CARTÃO DO MEU ITCH IO-->
+                                </div>
+                            </div>
+                        </details><!--FIM do Portifólio de Jogos-->
+
+                        <!--ITEM 2 = Portifólio HTML-->
+                        <details>
+                            <summary>Portifólio HTML</summary>
+                            <div class="conteudo">
+                                <div class="div-container-center">
+                                    <!--CARTÃO EX 1-->
+                                    <div class="card">
+                                        <div class="card-header">
+                                            <img src="./img/HTML5_logo.png" alt="Logotipo HTML5" class="profile-img">
+                                            <div class="user-info">
+                                                <h2>Exercício 1</h2>
+                                            </div>
+                                        </div>
+
+                                        <div class="card-body">
+                                            <p class="text-justify">Primeiro exercício em HTML, feito com o intuito de
+                                            apresenter os conceitos iniciais da programação em HTML.</p>
+                                        </div>
+
+                                        <div class="card-footer">
+                                            <a href="Ex 1/exUM.html">Exercício 1</a>
+                                        </div>
+                                    </div><!--FIM EX1-->
+
+                                    <!--CARTÃO EX 2-->
+                                    <div class="card">
+                                        <div class="card-header">
+                                            <img src="./img/HTML5_logo.png" alt="Logotipo HTML5" class="profile-img">
+                                            <div class="user-info">
+                                                <h2>Exercício 2</h2>
+                                            </div>
+                                        </div>
+
+                                        <div class="card-body">
+                                            <p class="text-justify">Segundo exercício em HTML. A proposta do exercício era tentar recriar o visual de 
+                                            uma página web já existente, com o intuito de reforçar os conceitos iniciais.</p>
+                                        </div>
+
+                                        <div class="card-footer">
+                                            <a href="Ex 2/exDOIS.html">Exercício 2</a>
+                                        </div>
+                                    </div><!--FIM EX2-->
+
+                                    <!--CARTÃO EX 2-->
+                                    <div class="card">
+                                        <div class="card-header">
+                                            <img src="./img/CSS3_logo.png" alt="Logotipo CSS" class="profile-img">
+                                            <div class="user-info">
+                                                <h2>Exercício 3</h2>
+                                            </div>
+                                        </div>
+
+                                        <div class="card-body">
+                                            <p class="text-justify">Exercício feito para aprsentar os conceitos iniciais de CSS e algumas de suas interações com as tags HTML.</p>
+                                        </div>
+
+                                        <div class="card-footer">
+                                            <a href="Ex 3/exTRES.html">Exercício 3</a>
+                                        </div>
+                                    </div><!--FIM EX3-->
+
+                                    <!--CARTÃO EX 4-->
+                                    <div class="card">
+                                        <div class="card-header">
+                                            <img src="./img/Flexbox_logo.jpg" alt="Logotipo Flexbox" class="profile-img">
+                                            <div class="user-info">
+                                                <h2>Exercício 4</h2>
+                                            </div>
+                                        </div>
+
+                                        <div class="card-body">
+                                            <p class="text-justify">Exercício feito para apresentar o Flexbox e suas funcionalidades.</p>
+                                        </div>
+
+                                        <div class="card-footer">
+                                            <a href="Ex 4/exQUATRO.html">Exercício 4</a>
+                                        </div>
+                                    </div><!--FIM EX 4-->
+
+                                    <!--CARTÃO EX 5 A-->
+                                    <div class="card">
+                                        <div class="card-header">
+                                            <img src="./img/Bootstrap_logo.png" alt="Logotipo Bootstrap" class="profile-img">
+                                            <div class="user-info">
+                                                <h2>Exercício 5 - A</h2>
+                                            </div>
+                                        </div>
+
+                                        <div class="card-body">
+                                            <p class="text-justify">Exercício feito para apresentar o framework Bootstrap e suas funcionalidades.</p>
+                                        </div>
+
+                                        <div class="card-footer">
+                                            <a href="Ex 5/Apresentação Bootstrap.html">Exercício 5 - A</a>
+                                        </div>
+                                    </div><!--FIM EX 5 A-->
+
+                                    <!--CARTÃO EX 5 B-->
+                                    <div class="card">
+                                        <div class="card-header">
+                                            <img src="./img/Bootstrap_logo.png" alt="Logotipo Bootstrap" class="profile-img">
+                                            <div class="user-info">
+                                                <h2>Exercício 5 - B</h2>
+                                            </div>
+                                        </div>
+
+                                        <div class="card-body">
+                                            <p class="text-justify">Exercício feito com o objetivo de tentar reproduzir a página inicial do site da Amazon, utilizando o framework Bootstrap.</p>
+                                        </div>
+
+                                        <div class="card-footer">
+                                            <a href="Ex 5/exCINCOb.html">Exercicio 5 - B</a>
+                                        </div>
+                                    </div><!--FIM EX 5 B-->
+
+                                    <!--CARTÃO EX 6-->
+                                    <div class="card">
+                                      <div class="card-header">
+                                        <img src="./img/Javascript_logo.jfif" alt="Logotipo Javascript" class="profile-img">
+                                        <div class="user-info">
+                                          <h2>Exercício 6</h2>
+                                        </div>
+                                      </div>
+
+                                      <div class="card-body">
+                                        <p class="text-justify">Exercício feito com o objetivo de apresentar o Javascript e suas interacoes com os 
+                                          elementos da pagina em HTML e os elementos em CSS.</p>
+                                      </div>
+
+                                      <div class="card-footer">
+                                        <a href="Ex 6/exSEIS.html">Exercício 6</a>
+                                      </div>
+                                    </div><!--FIM EX 6-->
+                                </div>
+                            </div>
+                        </details><!--FIM do Portifólio HTML-->
+                    </div>
+                </div>
+
+            </div><!--DIV com o código principal-->
+        </main><!--FIM da DIV main-->
+        <footer class="footer">
+            <p>&copy; 2026 Industrias ∀SQ - Todos os direitos reservados</p>
+        </footer>
     </body>
 </html>
+<!--
+<title>Portifólio em HTML Fatec Zona Leste</title>
+        <link rel="stylesheet" href="styles_index.css">
+-->
