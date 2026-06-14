@@ -1,0 +1,71 @@
+.div-central{
+  /*background-color: red;*/
+  margin-bottom: 20px;
+  display: flex; /* Utiliza Flexbox para layout - https://www.w3schools.com/css/css3_flexbox.asp */
+  justify-content: center; /* Centraliza o conteúdo horizontalmente - https://www.w3schools.com/css/css3_flexbox.asp */
+  flex-wrap: wrap; /* Permite que os itens quebrem para a próxima linha se necessário - https://www.w3schools.com/css/css3_flexbox.asp */
+}
+
+.corpoSemaforo{
+  background-color: rgb(169, 151, 151); /* Cor de fundo do cartão - https://www.w3schools.com/css/css_background.asp */
+  width: 200px; /* Largura do cartão - https://www.w3schools.com/css/css3_dimensions.asp */
+  height: 600px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Adiciona sombra ao redor do cartão - https://www.w3schools.com/css/css_box-shadow.asp */
+  border-radius: 10px; /* Bordas arredondadas do cartão - https://www.w3schools.com/css/css3_borders.asp */
+  /*margin: 50px auto;  Centraliza o cartão na página - https://www.w3schools.com/css/css_margin.asp */
+  /*overflow: hidden; /* Garante que o conteúdo não ultrapasse as bordas arredondadas - https://www.w3schools.com/css/css_overflow.asp */
+}
+
+.sinalRED{
+  width: 150px;
+  height: 150px;
+  text-align: center;
+  border-radius: 50%;
+  /*background-color: red;*/
+  background-color: rgb(100, 100, 100);
+  /*background-color: yellow;*/
+  color: white;
+  /*box-shadow: 0 4px 8px rgba(0,0,0,0.1);*/
+  box-shadow: 5px 5px 5px #313131;
+  margin: 25px;
+}
+.red{
+  background-color: red;
+}
+
+.sinalYELLOW{
+  width: 150px;
+  height: 150px;
+  text-align: center;
+  border-radius: 50%;
+  /*background-color: yellow;*/
+  background-color: rgb(100, 100, 100);
+  color: white;
+  /*box-shadow:0 4px 8px rgba(0,0,0,0.1);*/
+  box-shadow: 5px 5px 5px #313131;
+  margin: 25px;
+}
+.yellow{
+  background-color: yellow;
+}
+
+.sinalGREEN{
+  width: 150px;
+  height: 150px;
+  text-align: center;
+  border-radius: 50%;
+  /*background-color: green;*/
+  background-color: rgb(100, 100, 100);
+  color: white;
+  /*box-shadow:0 4px 8px rgba(0,0,0,0.1);*/
+  box-shadow: 5px 5px 5px #313131;
+  margin: 25px;
+}
+.green{
+  background-color: green;
+}
+
+.estado{
+  text-align: center;
+  margin: 10px;
+}

@@ -30,6 +30,7 @@ body {
     color: white;
     text-align: center;
     padding: 1rem;
+    /*position: static;*/
 }
 
 /*CSS DO EXEMPLO DE ACORDEÃO SEM BOOTSTRAP*/

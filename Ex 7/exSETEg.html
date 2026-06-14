@@ -1,0 +1,23 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Ex 7 - G</title>
+        <script src="script_exSETEg.js"></script>
+    </head>
+    <body>
+        <!--
+        7- Gerador de tabuada
+Crie um campo numérico e um botão. Ao clicar, exiba a tabuada do número de 1 a 10.
+Utilize a estrutura de laço de repetição
+        -->
+        <h1>Gerador de Tabuada</h1>
+        <h3>Digite um numero e a tabuada dele sera exibida na tela.</h3>
+        <label for="campoTabuada">Digite um numero</label>
+        <input type="number" id="campoTabuada" placeholder="Informe um Numero.">
+        <button id="botaoCriar" onclick="gerarTabuada()">GERAR TABUADA</button>
+        <!--DIV com tag ul pra criar uma lista não ordenada. EU coloco dentro dela um tag li pra cada numero da tabuada-->
+        <div>
+            <ul id="resultado"></ul>
+        </div>
+    </body>
+</html>

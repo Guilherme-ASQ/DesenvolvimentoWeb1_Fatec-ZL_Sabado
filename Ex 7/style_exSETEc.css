@@ -1,0 +1,20 @@
+.effect{
+    /*box-shadow: 4px 8px rgba(0,0,0,0.25);*/
+    color: black;
+    font-weight: bolder;
+    box-shadow: 5px 5px 5px #aaaaaa;
+}
+
+.respostaCerta{
+    font-size: large;
+    font-weight: bolder;
+    color: blue;
+    box-shadow: 5px 5px 5px #242323;
+}
+
+.respostaErrada{
+    font-size: large;
+    font-weight: bolder;
+    color: red;
+    box-shadow: 5px 5px 5px #242323;
+}

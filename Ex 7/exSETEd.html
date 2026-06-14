@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Ex 7 - D</title>
+        <script src="script_exSETEd.js"></script>
+    </head>
+    <body>
+        <!--
+        4- Lista de tarefas
+Crie um campo de texto e um botão para adicionar itens a uma lista.
+        -->
+        <h1>Lista de Tarefas - Tag p</h1>
+        <!--Primeira forma = tag p-->
+        <!--<p id="resultado-lista"></p>-->
+        <!--DIV onde eu vou adicionar as TAGs p com os itens da lista-->
+        <div id="resultado-lista"></div>
+
+        <label for="lista-tarefa">Digite a tarefa:</label>
+        <input type="text" id="campo-tarefa" placeholder="Digite a sua tarefa">
+        
+        <button id="botao-exibir" onclick="mudarLista()">ADICIONAR ITEM A LISTA</button>
+        <!--Segunda forma = tabela
+        https://www.w3schools.com/jsref/met_node_appendchild.asp - exemplos comando appendchild no w3school
+        https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_node_appendchild - exeplo do que o exercício pede mas aqui é com lista
+        tag ul - cria lista não ordenada
+        tag li - cria um item dentro da lista
+        **tag ol (ordered list)
+        -->
+
+        <!--Exercício da Lista usando as TAGs ol ul e li-->
+        <h1>Lista de Tarefas - Tag ul li ol</h1>
+        <div>
+            <ul id="listaUL"></ul>
+        </div>
+
+        <label for="campoUL">Digite uma tarefa:</label>
+        <input type="text" id="campoUL" placeholder="Escreva aqui a sua tarefa">
+        <button id="botaoUL" onclick="alterarListaUL()">ADICIONAR ITEM NA SEGUNDA LISTA</button>
+    </body>
+</html>

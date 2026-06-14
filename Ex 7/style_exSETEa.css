@@ -1,0 +1,17 @@
+.centro {
+    text-align: center;
+    /*margin: 20px;*/
+    padding: 20px;
+}
+
+/*CSS pra esconder o elemento*/
+.esconderMostra {
+    display: flex;
+    /*text-align: center;*/
+}
+
+body {
+    margin: 25px;
+}
+
+/*CSS pra mostrar o elemento*/

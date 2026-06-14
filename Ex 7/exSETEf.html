@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Ex 7 - F</title>
+        <script src="script_exSETEf.js"></script>
+        <link rel="stylesheet" href="style_exSETEf.css">
+    </head>
+    <body>
+        <!--
+        6- Simulador de semáforo
+Crie três círculos (vermelho, amarelo e verde) e botões para acender cada um deles.
+        -->
+        <h1>Semaforo</h1>
+        <!--CENTRALIZA O SEMAFORO E UMA TAG P QUE ESCREVE O ESTADO DO SEMAFORO-->
+        <div id="central" class="div-central">
+            <!--DIV com um cartao que servira de semaforo-->
+            <div id="corpo" class="corpoSemaforo">
+                <div id="red" class="sinalRED circulo" onclick="mudarCOR('red')">
+                    <p>red</p>
+                </div>
+                <div id="yellow" class="sinalYELLOW circulo" onclick="mudarCOR('yellow')">
+                    <p>yellow</p>
+                </div>
+                <div id="green" class="sinalGREEN circulo" onclick="mudarCOR('green')">
+                    <p>green</p>
+                </div>
+            </div>
+
+            <!--TAG p com o estado atual do semaforo-->
+            <p id="estadoATUAl" class="estado">SEMAFORO</p>
+        </div><!--FIM DA DIV COM O SEMAFORO E O PARAGRAFO DO LADO COM O ESTADO ATUAL DO SEMAFORO-->
+    </body>
+</html>
